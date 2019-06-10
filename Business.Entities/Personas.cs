@@ -72,13 +72,21 @@ namespace Business.Entities
             set { _Telefono = value; }
         }
 
-        private TiposPersona _TipoPersona;
+       
+        public enum TiposPersona
+        {
+           Docente,
+           Alumno,
+           Directivo
+        }
 
-        public TiposPersona TiposPersona
+        private TiposPersona _TipoPersona;
+        public TiposPersona TipoPersona
         {
             get { return _TipoPersona; }
             set { _TipoPersona = value; }
         }
 
+       
     }
 }
